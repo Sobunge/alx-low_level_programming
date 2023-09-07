@@ -1,5 +1,14 @@
 #include <stdio.h>
-/* Use the puts function to print the string and add a new line */
+
+/**
+ * main - Entry point
+ * 
+ * Description: 'the program's description'
+ * @parameter: describe the parameter
+ * 
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	/* Use the puts function to print the string and add a new line */
