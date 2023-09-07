@@ -6,6 +6,5 @@
  */
 int main(void)
 {
-        /* Use the puts function to print the string and add a new line */
-        printf("with proper grammar, but the outcome is a piece of art,\n");
-        return (0); }
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0); }
