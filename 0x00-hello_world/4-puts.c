@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-int main(void)
-{
-    /* Use the function puts to print the message */
+int main() {
+    // Use the puts function to print the string and add a new line
     puts("Programming is like building a multilingual puzzle");
 
-    /* Return 0 to indicate success */
-    return (0);
+    return 0;
 }
