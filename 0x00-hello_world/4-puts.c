@@ -2,7 +2,6 @@
 /**
  * main - Entry point
  * Description: Use thr puts function to print the string and add a new line
- * @parameter: Return 0
  * Return: Always 0 (Success)
  */
 int main(void)
