@@ -14,13 +14,13 @@ int main(void)
 		{
 			if (i != j)
 			{
-				putchar(j / 10 + 48);
-				putchar(j % 10 + 48);
-				putchar(' ');
-				putchar(i / 10 + 48);
-				putchar(i % 10 + 48);
+				putchar((i / 10) + '0'); /* Print the first digit of the first number */
+				putchar((i % 10) + '0'); /* Print the second digit of the first number */
+				putchar(' '); /* Print a space */
+				putchar((j / 10) + '0'); /* Print the first digit of the second number */
+				putchar((j % 10) + '0'); /* Print the second digit of the second number */
 
-				if (i != 99 || j != 99 || (i == 0 && j == 0))
+				if (i != 99 || j != 99 )
 				{
 					putchar(',');
 					putchar(' ');
