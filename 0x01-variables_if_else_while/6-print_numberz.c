@@ -14,7 +14,6 @@ int main(void)
 	for (i = zero; i <= nine; i++)
 	{
 		putchar(i);
-		putchar('\n');
 	}
 	putchar('\n'); /* Print a newline character */
 	return (0); }
