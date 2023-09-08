@@ -7,7 +7,7 @@
 int main(void)
 {
 	/* Print all possible combinations of single-digit numbers */
-	int i, j;
+	int i;
 
 	for (i = 0; i <= 9; i++)
 	{
