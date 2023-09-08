@@ -7,12 +7,14 @@
 int main(void)
 {
 	/* Print single-digit numbers from 0 to 9 using 'putchar' */
-	int digit = 0; /* Initialize with the character '0' */
+	int zero = '0'; /* Initialize with the character '0' */
+	int nine = '9'; /* Initialize with the character '9' */
+	int i;
 
-	while (digit <= 9)
+	for (i = zero; i <= nine; i++)
 	{
-		putchar(digit);
-		digit++;
+		putchar(i);
+		putchar('\n');
 	}
 	putchar('\n'); /* Print a newline character */
 	return (0); }
