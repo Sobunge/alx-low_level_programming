@@ -13,6 +13,7 @@ int main(void)
 	{
 		if (i < 9)
 		{
+			putchar(i + '0'); /* Print i in int */
 			putchar(','); /* Print a comma */
 			putchar(' '); /* Print a space */
 		}
