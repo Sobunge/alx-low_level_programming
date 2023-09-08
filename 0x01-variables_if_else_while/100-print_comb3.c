@@ -6,9 +6,10 @@
  */
 int main(void)
 {
-	for (int i = 0; i <= 8; i++)
+	int i, j; /* Initializing i and j */
+	for (i = 0; i <= 8; i++)
 	{
-		for (int j = i + 1; j <= 9; j++)
+		for (j = i + 1; j <= 9; j++)
 		{
 		putchar(i + '0'); /* Print the first digit */
 		putchar(j + '0'); /* Print the second digit */
