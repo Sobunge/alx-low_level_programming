@@ -8,6 +8,7 @@ int main(void)
 {
 	 /* Print the lowercase alphabet in reverse using 'putchar' */
 	char c;
+	
 	for (c = 'z'; c >= 'a'; c--)
 	{
 		putchar(c);
