@@ -10,8 +10,8 @@ int main(void)
 	{
 		for (int j = i + 1; j <= 9; j++)
 		{
-		putchar(i + '0'); // Print the first digit
-		putchar(j + '0'); // Print the second digit
+		putchar(i + '0'); /* Print the first digit */
+		putchar(j + '0'); /* Print the second digit */
 			if (i != 8 || j != 9)
 			{
 				putchar(','); /* Print a comma */
