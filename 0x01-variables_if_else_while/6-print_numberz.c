@@ -7,9 +7,9 @@
 int main(void)
 {
 	/* Print single-digit numbers from 0 to 9 using 'putchar' */
-	char digit = '0'; /* Initialize with the character '0' */
+	int digit = 0; /* Initialize with the character '0' */
 
-	while (digit <= '9')
+	while (digit <= 9)
 	{
 		putchar(digit);
 		digit++;
