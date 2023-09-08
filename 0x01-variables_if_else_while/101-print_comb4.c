@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i, j, k; /* Initilizing i, j and k */
-	
+
 	for (i = 0; i <= 7; i++)
 	{
 		for (j = i + 1; j <= 8; j++)
