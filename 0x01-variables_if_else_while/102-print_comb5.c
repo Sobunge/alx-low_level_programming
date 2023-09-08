@@ -5,24 +5,30 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-	int i, j; /* Initialize i and j*/
+{	
+	int c;
+	int d = 0;
 
-	for (i = 0; i <= 99; i++)
+	while (d < 10)
 	{
-		for (j = i; j <= 99; j++)
+		c = 0;
+		while (c < 10)
 		{
-			putchar((i / 10) + '0'); /* Print the first digit of the first number */
-			putchar((i % 10) + '0');  /* Print the second digit of the first number */
-			putchar(' '); /* Print a space */
-			putchar((j / 10) + '0'); /* Print the first digit of the second number */
-			putchar((j % 10) + '0'); /* Print the second digit of the second number */
-			if (i != 99 || j != 99)
+			if (d != c && d < c)
 			{
-				putchar(','); /* Print a comma */
-				putchar(' '); /* Print a space */
+				putchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+
+			c++;
 		}
+		d++;
 	}
-	putchar('\n'); /* Print a newline character */
+	putchar('\n');
 	return (0); }
