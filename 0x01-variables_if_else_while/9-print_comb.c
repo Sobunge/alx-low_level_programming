@@ -11,9 +11,11 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		putchar(i + '0');
-		putchar(',');
-		putchar(' ');
+		if (number < 9)
+		{
+			putchar(','); /* Print a comma */
+			putchar(' '); /* Print a space */
+		}
 	}
 	putchar('\n');
 	return (0); }
