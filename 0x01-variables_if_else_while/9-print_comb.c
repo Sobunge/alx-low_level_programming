@@ -9,17 +9,10 @@ int main(void)
 	/* Print all possible combinations of single-digit numbers */
 	int i, j;
 
-	for (i = 1; i <= 9; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = i +  1; j <= 9; j++)
-		{
-			if (i < j)
-			{
-				putchar(i + '0');
-				putchar(',');
-				putchar(' ');
-				putchar(j + '0');
-			}
-		}
+		putchar(i);
+		putchar(',');
+		putchar(' ');
 	}
 	return (0); }
