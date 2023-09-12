@@ -8,14 +8,15 @@ int main(void)
 {
 	int prev = 1; /* Initialize the previous Fibonacci number */
 	int current = 2; /* Initialize the current Fibonacci number */
-	int count = 2; /* Start the count at 2 to account for the first two numbers */
+	int count = 2; /* Start the count at 2 */
+	int next, nxt;
 
     	/* Print the first two Fibonacci numbers */
 	printf("1, 2, ");
 	while (count < 98)
 	{
 		/* Calculate the next Fibonacci number */
-		int next = prev + current;
+		next = prev + current;
 		/* Print the next Fibonacci number with a comma and space */
 		printf("%d, ", next);
 		/* Update variables for the next iteration */
@@ -24,6 +25,6 @@ int main(void)
 		count++;
 	}
 	/* Calculate and print the 98th Fibonacci number */
-	int next = prev + current;
+	nxt = prev + current;
 	printf("%d\n", next);
 	return (0); }
