@@ -1,5 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 
+/**
+  * _abs - Computes the absolute value of an integer.
+  * @c: The number to be computed.
+  *
+  * Return: Absolute value of number or zero
+  */
 int _abs(int n) 
 {
 	if (n < 0)
@@ -10,22 +17,3 @@ int _abs(int n)
 		return n;  /* If n is already positive or zero, return it as is */
 	}
 }
-
-/**
- * main - Entry point
- * Description: Use thr puts function to print the string and add a new line
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int r;
-
-	r = _abs(-1);
-	printf("%d\n", r);
-	r = _abs(0);
-	printf("%d\n", r);
-	r = _abs(1);
-	printf("%d\n", r);
-	r = _abs(-98);
-	printf("%d\n", r);
-	return (0); }
