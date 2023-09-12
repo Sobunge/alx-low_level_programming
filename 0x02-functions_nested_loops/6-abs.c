@@ -10,9 +10,9 @@
 int _abs(int n) 
 {
 	if (n < 0)
-	{	
+	{
 		return -n; /* Return the negation of the negative number to make it positive */
-	} else 
+	} else
 	{
 		return n;  /* If n is already positive or zero, return it as is */
 	}
