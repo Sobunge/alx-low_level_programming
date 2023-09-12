@@ -9,20 +9,19 @@
   */
 int print_sign(int n)
 {
-	int sign;
-
 	if (n > 0)
 	{
-		putchar('+');
-		sign = 1;
-	} else if (n == 0)
-	{
-		putchar('0');
-		sign = 0;
-	} else
-	{
-		putchar('-');
-		sign = -1;
+		_putchar(43);
+		return (1);
 	}
-	return sign;
+	else if (n < 0)
+	{
+		_putchar(45);
+		return (-1);
+	}
+	else
+	{
+		_putchar(48);
+		return (0);
+	}
 }
