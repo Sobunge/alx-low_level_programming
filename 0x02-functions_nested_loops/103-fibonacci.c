@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	long long int prev = 1; /* First Fibonacci number */
-	long long int current = 2; /* Second Fibonacci number */
-	long long int next;
-	long long int sum = 0;
+	long prev = 1; /* First Fibonacci number */
+	long current = 2; /* Second Fibonacci number */
+	long next;
+	long sum = 0;
 
 	while (current <= 4000000)
 	{
@@ -22,5 +22,5 @@ int main(void)
 	prev = current;
 	current = next;
 	}
-	printf("The sum of even-valued Fibonacci terms not exceeding 4,000,000 is: %lld\n", sum);
+	printf("The sum of even-valued Fibonacci terms not exceeding 4,000,000 is: %ld\n", sum);
 	return (0); }
