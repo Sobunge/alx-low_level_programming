@@ -1,30 +1,38 @@
 #include <stdio.h>
+#define LARGEST 10000000000
 /**
- * main - Entry point
- * Description: Use thr puts function to print the string and add a new line
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: Find and print the first 98 fib numbers starting with 1 and 2.
+ * Numbers should be coma and space separated.
+ * Return: 0
  */
 int main(void)
 {
-	int prev = 1; /* Initialize the previous Fibonacci number */
-	int current = 2; /* Initialize the current Fibonacci number */
-	int count = 2; /* Start the count at 2 */
-	unsigned long int next, nxt;
+	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
+	unsigned long int hold1, hold2, hold3;
+	int count;
 
-	/* Print the first two Fibonacci numbers */
-	printf("1, 2, ");
-	while (count < 98)
+	printf("%lu, %lu, ", bk1, bk2);
+	for (count = 2; count < 98; count++)
 	{
-		/* Calculate the next Fibonacci number */
-		next = prev + current;
-		/* Print the next Fibonacci number with a comma and space */
-		printf("%lu, ", next);
-		/* Update variables for the next iteration */
-		prev = current;
-		current = next;
-		count++;
+		if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
+		{
+			hold1 = (bk1 + bk2) / LARGEST;
+			hold2 = (bk1 + bk2) % LARGEST;
+			hold3 = fr1 + fr2 + hold1;
+			fr1 = fr2, fr2 = hold3;
+			bk1 = bk2, bk2 = hold2;
+			printf("%lu%010lu", fr2, bk2);
+		}
+		else
+		{
+			hold2 = bk1 + bk2;
+			bk1 = bk2, bk2 = hold2;
+			printf("%lu", bk2);
+		}
+		if (count != 97)
+			printf(", ");
 	}
-	/* Calculate and print the 98th Fibonacci number */
-	nxt = prev + current;
-	printf("%lu\n", nxt);
-	return (0); }
+	printf("\n");
+	return (0);
+}
