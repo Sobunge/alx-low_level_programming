@@ -3,7 +3,7 @@
 /**
  * function -Print alphabet
  * Description: Use thr puts function to print the string and add a new line
- * Return: Always 0 (Success)
+ * Return: void
  */
 void print_alphabet(void)
 {
