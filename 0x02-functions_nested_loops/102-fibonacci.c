@@ -7,7 +7,8 @@
 int main(void)
 {
 	long fib[50];
-	int i; /* Store Fibonacci numbers as long long integers to handle large values */
+	int i;
+
 	fib[0] = 1;
 	fib[1] = 2;
 
