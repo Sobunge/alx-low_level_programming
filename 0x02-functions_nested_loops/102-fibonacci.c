@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long long int fib[50];
+	long fib[50];
 	int i; /* Store Fibonacci numbers as long long integers to handle large values */
 	fib[0] = 1;
 	fib[1] = 2;
@@ -17,7 +17,7 @@ int main(void)
 	}
 	for (i = 0; i < 50; i++)
 	{
-		printf("%llu", fib[i]);
+		printf("%ld", fib[i]);
 		if (i < 49)
 		{
 			printf(", ");
