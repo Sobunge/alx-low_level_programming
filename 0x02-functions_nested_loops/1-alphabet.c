@@ -1,13 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: Use the print_alphabet to print from a to z
- * Return: void (Success)
- *
- * print_alphabet - Prints the lowercase alphabet followed by a newline.
- * followed by a newline character '\n'. It uses the putchar function from
- * the standard library to print each character.
+ * print_alphabet - prints lowercase alphabets
  */
 void print_alphabet(void)
 {
