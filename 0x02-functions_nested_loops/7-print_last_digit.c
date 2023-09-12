@@ -14,8 +14,8 @@ int print_last_digit(int n)
 	/* Ensure the last_digit is positive */
 	if (last_digit < 0)
 	{
-		last_digit = -last_digit;
+		last_digit = last_digit * -1; 
 	}
-	printf("%d", last_digit); /* Print the last digit */
+	_putchar(last_digit); /* Print the last digit */
 	return (last_digit);
 }
