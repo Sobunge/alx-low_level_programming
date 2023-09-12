@@ -1,24 +1,23 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main - Entry point
- * Description: Use thr puts function to print the string and add a new line
- * Return: Always 0 (Success)
- */
-int main(void)
+  * print_alphabet_x10 - Make alphabet x10 times
+  *
+  * Return: void
+  */
+void print_alphabet_x10(void)
 {
 	char letter = 'a';
-	int count = 0;
+	int i, j;
 
-	while (count < 10)
+	for (i = 0; i < 10; i++)
 	{
-		while (letter <= 'z')
+		for (j = 0; j < 26; j++)
 		{
 			_putchar(letter);
 			letter++;
-		}
-		_putchar('\n');
-		letter = 'a'; /* Reset the letter to 'a' for the next line */
-		count++;
 	}
-	return (0); }
+	_putchar('\n');
+	letter = 'a';  /* Reset letter to 'a' for the next line */
+	}
+}
