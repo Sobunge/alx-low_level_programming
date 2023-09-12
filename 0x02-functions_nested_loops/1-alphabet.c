@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * function -Print alphabet
- * Description: Use thr puts function to print the string and add a new line
- * Return: void
+ * Prints the lowercase alphabet followed by a newline.
  */
 void print_alphabet(void)
 {
