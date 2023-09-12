@@ -12,8 +12,6 @@ int _abs(int n)
 	if (n < 0)
 	{
 		return (-n); /* Return the negative number to make it positive */
-	} else
-	{
-		return (n);  /* If n is already positive or zero, return it as is */
 	}
+	return (n);  /* If n is already positive or zero, return it as is */
 }
