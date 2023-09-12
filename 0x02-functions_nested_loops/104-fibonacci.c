@@ -26,5 +26,5 @@ int main(void)
 	}
 	/* Calculate and print the 98th Fibonacci number */
 	nxt = prev + current;
-	printf("%d\n", next);
+	printf("%d\n", nxt);
 	return (0); }
