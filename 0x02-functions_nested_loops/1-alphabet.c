@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: Use the print_alphabet function to print the list of alphabet from a to z
+ * Description: Use the print_alphabet to print from a to z
  * Return: void (Success)
  */
 void print_alphabet(void)
