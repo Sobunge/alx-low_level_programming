@@ -1,10 +1,18 @@
 #include <stdio.h>
+#include "main.h"
 
+/**
+ *print_to_98 - prints all natural numbers from n to 98
+ * @n: input number to check
+ * Return: nothing.
+ */
 void print_to_98(int n)
 {
+	int i;
+
 	if (n <= 98)
 	{
-		for (int i = n; i <= 98; i++)
+		for (i = n; i <= 98; i++)
 		{
 			printf("%d", i);
 			if (i != 98)
@@ -14,7 +22,7 @@ void print_to_98(int n)
 		}
 	} else
 	{
-		for (int i = n; i >= 98; i--)
+		for (i = n; i >= 98; i--)
 		{
 			printf("%d", i);
 			if (i != 98)
@@ -25,17 +33,3 @@ void print_to_98(int n)
 	}
     printf("\n");
 }
-
-/**
- * main - Entry point
- * Description: Use thr puts function to print the string and add a new line
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_to_98(0);
-	print_to_98(98);
-	print_to_98(111);
-	print_to_98(81);
-	print_to_98(-10);	
-	return (0); }
