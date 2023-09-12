@@ -9,7 +9,7 @@ int main(void)
 	int prev = 1; /* Initialize the previous Fibonacci number */
 	int current = 2; /* Initialize the current Fibonacci number */
 	int count = 2; /* Start the count at 2 */
-	long next, nxt;
+	unsigned long int next, nxt;
 
 	/* Print the first two Fibonacci numbers */
 	printf("1, 2, ");
@@ -18,7 +18,7 @@ int main(void)
 		/* Calculate the next Fibonacci number */
 		next = prev + current;
 		/* Print the next Fibonacci number with a comma and space */
-		printf("%ld, ", next);
+		printf("%lu, ", next);
 		/* Update variables for the next iteration */
 		prev = current;
 		current = next;
@@ -26,5 +26,5 @@ int main(void)
 	}
 	/* Calculate and print the 98th Fibonacci number */
 	nxt = prev + current;
-	printf("%ld\n", nxt);
+	printf("%lu\n", nxt);
 	return (0); }
