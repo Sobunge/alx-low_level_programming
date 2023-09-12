@@ -1,1 +1,1 @@
-# Scripts for running c programs
+Scripts for running c programs
