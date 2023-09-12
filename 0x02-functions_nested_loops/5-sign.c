@@ -9,17 +9,20 @@
   */
 int print_sign(int n)
 {
+	int sign;
+
 	if (n > 0)
 	{
-		printf("+");
-		return (1);
+		putchar('+');
+		sign = 1;
 	} else if (n == 0)
 	{
-		printf("0");
-		return (0);
+		putchar('0');
+		sign = 0;
 	} else
 	{
-		printf("-");
-		return (-1);
+		putchar('-');
+		sign = -1;
 	}
+	return sign;
 }
