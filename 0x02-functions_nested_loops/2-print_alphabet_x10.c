@@ -18,7 +18,7 @@ int main(void)
 			letter++;
 		}
 		_putchar('\n');
-		letter = 'a'; // Reset the letter to 'a' for the next line
+		letter = 'a'; /* Reset the letter to 'a' for the next line */
 		count++;
 	}
 	return (0); }
