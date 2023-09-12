@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - Entry point
  * Description: Use thr puts function to print the string and add a new line
