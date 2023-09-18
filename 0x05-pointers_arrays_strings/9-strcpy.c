@@ -8,19 +8,20 @@
   * Return: a string of character upon success
 */
 
-char*_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int l;
-	int i;
+	char *dest_start = dest; /* Store the starting address of dest */
 
-	while (src[l] != '\0')
+	/* Copy characters from src to dest */
+	while (*src != '\0')
 	{
-		l++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	for(i = 0; i < l ; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
-	return(dest);
+
+	/* Add the terminating null byte to dest */
+	*dest = '\0';
+
+	return dest_start; /* Return the pointer to the beginning of dest */
 }
