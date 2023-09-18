@@ -8,14 +8,14 @@
 */
 void swap_int(int *a, int *b)
 {
-	/* Check if the pointers are not NULL (to avoid dereferencing null pointers) */
+	/* Check if the pointers are not NULL */
 	if (a != NULL && b != NULL)
 	{
 		/* Use a temporary variable to hold the value of one integer */
 		int temp = *a;
 		/* Assign the value of the second integer to the first integer */
 		*a = *b;
-		/* Assign the value held in the temporary variable to the second integer */
+		/* Assign the value held in the temporary variable*/
 		*b = temp;
 	}
 }
