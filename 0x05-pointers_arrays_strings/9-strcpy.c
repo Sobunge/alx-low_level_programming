@@ -23,5 +23,5 @@ char *_strcpy(char *dest, char *src)
 	/* Add the terminating null byte to dest */
 	*dest = '\0';
 
-	return dest_start; /* Return the pointer to the beginning of dest */
+	return (dest_start); /* Return the pointer to the beginning of dest */
 }
