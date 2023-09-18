@@ -5,7 +5,7 @@
    * @str: pointer to the string to point
    * Return: void
 */
-int void_puts2(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
@@ -18,4 +18,5 @@ int void_puts2(char *str)
 		i++;
 	}
 	_putchar('\n');
+
 }
