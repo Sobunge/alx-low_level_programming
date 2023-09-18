@@ -3,23 +3,30 @@
 /**
    * rev_string - Write a function that reverses a string
    *
-   * @s: string var pointer
+   * @s: string var point
+   *
 */
 void rev_string(char *s)
 {
-	int i, j, temp;
+	int length = 0, start = 0, end;
+	char temp;
 
-	i= 0;
-	j= 0;
-	while (s[i] != '\0')
+	if (s == NULL)
+		return;
+	length = 0;
+	while (s[length] != '\0')
 	{
-		j++;
+		length++;/*Calculate the length of the string */
 	}
-	j--;
-	while (j>i)
+	end = length - 1;
+	while (start < end)
 	{
-		temp = s[j];
-		s[j--] = s[i];
-		s[i++] = temp;
+		/* Swap characters at start and end */
+		temp = s[start];
+		s[start] = s[end];
+		s[end] = temp;
+		/* Move towards the center of the string */
+		start++;
+		end--;
 	}
 }
