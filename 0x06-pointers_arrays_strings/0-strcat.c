@@ -29,4 +29,4 @@ char *_strcat(char *dest, const char *src)
 	/* Add a null terminator to the end of the concatenated string */
 	*dest = '\0';
 
-	return result; /* Return the start address of dest */ }
+	return (result); /* Return the start address of dest */ }
