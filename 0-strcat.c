@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
 *_strcat - function that concatenates two strings.
 *@dest: pointer to destination string.
@@ -7,7 +8,6 @@
 *
 *Return: pointer to destination string.
  */
-
 char *_strcat(char *dest, const char *src)
 {
 	char *result = dest;/*Store the start address of dest */
