@@ -1,21 +1,28 @@
-#include <stddef.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- *_strchr -  concatenates two strings
- *@s: A pointer to an char that will be updated
- *@c: A pointer to an char that will be updated
- *Return: Null
+ * *_strchr - locates a character in a string
+ * @s: string to search
+ * @c: char to find
+ *
+ * Return: a pointer to the first occurrence of the character
+ * c in the string s, or NULL if the character is not found
  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
-	{
-		if (*s == c)
+		int a;
+
+		while (1)
 		{
-			return (s);
+			a = *s++;
+			if (a == c)
+			{
+				return (s - 1);
+			}
+			if (a == 0)
+			{
+				return (NULL);
+			}
 		}
-		s++;
-	}
-	return (NULL);
 }
