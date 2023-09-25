@@ -1,13 +1,23 @@
 #include <stddef.h>
 
-char *_strchr(char *s, char c) {
-    while (*s != '\0') {
-        if (*s == c) {
-            return s; // Return a pointer to the first occurrence of c
-        }
-        s++; // Move to the next character in the string
-    }
+/**
+ *_strchr -  concatenates two strings
+ *@s: A pointer to an char that will be updated
+ *@c: A pointer to an char that will be updated
+ *Return: Null
+ */
+char *_strchr(char *s, char c)
+{
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			/* Return a pointer to the first occurrence of c */
+			return (s);
+		}
+		s++; /* Move to the next character in the string */
+	}
 
-    // If c is not found, return NULL
-    return NULL;
+	/* If c is not found, return NULL */
+	return (NULL);
 }
