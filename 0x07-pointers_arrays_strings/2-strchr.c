@@ -19,5 +19,5 @@ char *_strchr(char *s, char c)
 	}
 
 	/* If c is not found, return NULL */
-	return (NULL);
+	return NULL;
 }
