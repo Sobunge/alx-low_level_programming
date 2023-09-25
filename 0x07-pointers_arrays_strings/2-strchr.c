@@ -12,12 +12,9 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			/* Return a pointer to the first occurrence of c */
 			return (s);
 		}
-		s++; /* Move to the next character in the string */
+		s++;
 	}
-
-	/* If c is not found, return NULL */
-	return NULL;
+	return (NULL);
 }
