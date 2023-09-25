@@ -1,6 +1,13 @@
 #include <stddef.h>
 #include "main.h"
 
+/**
+ *_memcpy -  concatenates two strings
+ *@dest: A pointer to an char that will be updated
+ *@src: A pointer to an char that will be updated
+ *@n: unsigned n
+ *Return: original_dest
+ */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *original_dest = dest;/*Save the original dest pointer*/
