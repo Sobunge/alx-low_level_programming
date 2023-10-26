@@ -18,10 +18,10 @@ unsigned int binary_to_uint(const char *b)
 		char c = b[i];
 		
 		if (c != '0' && c != '1')
-			{
-				return (0);
-				result = (result << 1) + (c - '0');
-			}
+		{
+			return (0);
+			result = (result << 1) + (c - '0');
+		}
 
 		return (result);
 	}
