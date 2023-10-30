@@ -1,6 +1,5 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-#include <unistd.h>
 #define BUFSIZE 1024
 
 /**
