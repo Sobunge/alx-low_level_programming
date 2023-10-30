@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - reads a text file and 
- * prints it to the POSIX standard output
+ * read_textfile - reads a text file and prints it to the POSIX standard output
  * @filename: the name of the file to read
  * @letters: the number of letters to read and print
  * Return: the actual number of letters read and printed, or 0 if error
@@ -12,8 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd; /* file descriptor */
 	char *buffer; /* buffer to store the file content */
-	ssize_t bytes_read, bytes_written; /* number of bytes 
-					      read and written */
+	ssize_t bytes_read, bytes_written; /* number of bytes read and written */
 
 	/* check if filename is NULL */
 	if (filename == NULL)
@@ -47,8 +45,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/* write the buffer content to the standard output */
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 
-	/* check if write failed or did not write the expected
-	 * amount of bytes */
+	/* check if write failed or did not write the expected amount of bytes */
 	if (bytes_written == -1 || bytes_written != bytes_read)
 		return (0);
 
