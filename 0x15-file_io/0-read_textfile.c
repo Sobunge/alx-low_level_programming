@@ -55,4 +55,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/* return the actual number of letters read and printed */
 	return (bytes_written);
 }
-
